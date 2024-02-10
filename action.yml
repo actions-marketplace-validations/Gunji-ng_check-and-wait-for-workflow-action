@@ -1,4 +1,4 @@
-name: "wait-for-workflow-action"
+name: "check-and-wait-for-workflow-action"
 description: "This action checks for a workflow run and waits for it to conclude if it is running."
 inputs:
   token:

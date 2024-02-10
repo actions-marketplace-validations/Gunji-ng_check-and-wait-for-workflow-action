@@ -1,4 +1,4 @@
-# wait-for-workflow-action
+# check-and-wait-for-workflow-action
 This action checks for a workflow run and waits for it to conclude if it is running.
 
 ## Inputs
@@ -29,7 +29,7 @@ Timeout (in ms). Default: `"1800000"`.
 ```yaml
 - name: Check for contract tests
   id: check-and-wait
-  uses: Gunji-ng/wait-for-workflow-action@v1.0.0
+  uses: Gunji-ng/check-and-wait-for-workflow-action@v1.0.1
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     owner: YourORG
