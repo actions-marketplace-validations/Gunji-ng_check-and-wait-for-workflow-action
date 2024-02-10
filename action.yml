@@ -1,5 +1,9 @@
 name: "check-and-wait-for-workflow-action"
 description: "This action checks for a workflow run and waits for it to conclude if it is running."
+author: Gunji-ng
+branding:
+  icon: loader
+  color: gray-dark
 inputs:
   token:
     description: "GITHUB_TOKEN"
