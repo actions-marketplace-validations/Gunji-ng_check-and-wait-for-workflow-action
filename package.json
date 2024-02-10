@@ -1,0 +1,25 @@
+{
+  "name": "wait-for-workflow-action",
+  "version": "1.0.0",
+  "description": "This action checks for a workflow run and waits for it to conclude if it is running.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gunji-ng/wait-for-workflow-action.git"
+  },
+  "keywords": [],
+  "author": "justgunji@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gunji-ng/wait-for-workflow-action/issues"
+  },
+  "homepage": "https://github.com/Gunji-ng/wait-for-workflow-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  }
+}

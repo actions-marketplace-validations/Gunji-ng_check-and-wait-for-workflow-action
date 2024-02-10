@@ -1,0 +1,32 @@
+name: "wait-for-workflow-action"
+description: "This action checks for a workflow run and waits for it to conclude if it is running."
+inputs:
+  token:
+    description: "GITHUB_TOKEN"
+    required: true
+  owner:
+    description: "The owner of the repo"
+    required: false
+    default: ${{ github.event.repository.owner.name }}
+  repo:
+    description: "The repo that contains the workflow"
+    required: false
+    default: ${{ github.event.repository.name }}
+  workflow:
+    description: "The name of the workflow file"
+    required: true
+  branch:
+    description: "The branch to check"
+    required: false
+    default: master
+  interval:
+    description: "Time between checks (in ms)"
+    required: false
+    default: "60000"
+  timeout:
+    description: "Timeout (in ms)"
+    required: false
+    default: "1800000"
+runs:
+  using: "node20"
+  main: "dist/index.js"
